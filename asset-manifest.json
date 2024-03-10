@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/tarkov_ammo_finder/static/css/main.185c4271.css",
+    "main.js": "/tarkov_ammo_finder/static/js/main.05597009.js",
+    "static/js/453.37ef86b8.chunk.js": "/tarkov_ammo_finder/static/js/453.37ef86b8.chunk.js",
+    "static/media/killaimg.jpg": "/tarkov_ammo_finder/static/media/killaimg.9e10fc1316912f38bf51.jpg",
+    "index.html": "/tarkov_ammo_finder/index.html",
+    "main.185c4271.css.map": "/tarkov_ammo_finder/static/css/main.185c4271.css.map",
+    "main.05597009.js.map": "/tarkov_ammo_finder/static/js/main.05597009.js.map",
+    "453.37ef86b8.chunk.js.map": "/tarkov_ammo_finder/static/js/453.37ef86b8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.185c4271.css",
+    "static/js/main.05597009.js"
+  ]
+}
