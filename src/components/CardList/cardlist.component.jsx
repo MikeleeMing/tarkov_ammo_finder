@@ -1,5 +1,4 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.css";
 import BulletCard  from '../BulletCard/bulletcard.component'
 
 import "./cardlist.styles.css";

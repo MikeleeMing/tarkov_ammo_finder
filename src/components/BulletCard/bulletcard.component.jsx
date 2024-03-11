@@ -1,7 +1,4 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.css";
-import Card from 'react-bootstrap/Card';
-import ListGroup from 'react-bootstrap/ListGroup';
 import './bulletcard.styles.css';
 
 

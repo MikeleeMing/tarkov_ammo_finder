@@ -1,4 +1,3 @@
-import "bootstrap/dist/css/bootstrap.css";
 import './App.css';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
@@ -12,10 +11,12 @@ function App() {
 
   useEffect(() => {
     const fetchBullets = async () => {
-      const response = await axios(
-      'http://localhost:8000/bullets',
-      );
-      setBullets(response.data);
+      try {
+        const response = await axios('http://localhost:8000/bullets');
+        setBullets(response.data);
+      } catch (error) {
+        console.error("Error fetching bullets:", error);
+      }
       };
     fetchBullets();
 }, []);
