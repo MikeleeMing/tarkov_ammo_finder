@@ -1,9 +1,11 @@
 .bulletlist {
     width: 66vw;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin:auto;
+    box-shadow: h-offset v-offset blur spread color;
 }
 
 @media only screen and (max-width: 815px) {

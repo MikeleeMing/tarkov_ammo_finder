@@ -18,29 +18,55 @@ function BulletCard({ bullet }) {
     const ArmorClass5 = bullet["Armor class 5"];
     const ArmorClass6 = bullet["Armor class 6"];
     const BulletImg = bullet["imgurl"];
+    console.log("bullet damage: ", BulletImg);
 
   return (
-    <Card className="card" border="secondary" style={{ width: '18rem' }} bg={'Dark'}>
-      <Card.Img className="img" variant="top" src={BulletImg} />
-      <Card.Body>
-        <Card.Title>{Name}</Card.Title>
-      </Card.Body>
-      <ListGroup className="list-group-flush">
-        <ListGroup.Item className="item">Damage: { DMG }</ListGroup.Item>
-        <ListGroup.Item className="item">Penetration: { PenetrationPower }</ListGroup.Item>
-        <ListGroup.Item className="item">Frag Change: { FragChance } </ListGroup.Item>
-        <ListGroup.Item className="item">
-        Effectiveness Against Armor:<br/>
-        <span className="armor-value">Class 1: {ArmorClass1}</span><br/>
-        <span className="armor-value">Class 2: {ArmorClass2}</span><br/>
-        <span className="armor-value">Class 3: {ArmorClass3}</span><br/> 
-        <span className="armor-value">Class 4: {ArmorClass4}</span><br/> 
-        <span className="armor-value">Class 5: {ArmorClass5}</span><br/> 
-        <span className="armor-value">Class 6: {ArmorClass6}</span><br/> 
-         </ListGroup.Item>
+    <div className="card">
+      <img className="img" src={`${process.env.PUBLIC_URL}/${BulletImg}`} alt=''/>
+      <div className="card-title">{ Name }</div>
+      <div className="card-body">
+        <ul className="list">
+          <li className="item">
+          <li className="item">Damage: { DMG }</li>
+          <li className="item">Penetration: { PenetrationPower }</li>
+          <li className="item">Frag Change: { FragChance }</li>
+          </li>
+          <li className="item">
+          <span className="armor-value"> 
+          Effectiveness Against Armor:<br/>
+          <div className="armor-v">
+          <table class="custom-table">
+          <thead>
+          <tr>
+            <th className="tablecell tablelines">Class 1</th>
+            <th className="tablecell tablelines">Class 2</th>
+            <th className="tablecell tablelines">Class 3</th>
+            <th className="tablecell tablelines">Class 4</th>
+            <th className="tablecell tablelines">Class 5</th>
+            <th className="tablecell">Class 6</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td className="tablecell tablelines">{ArmorClass1}</td>
+            <td className="tablecell tablelines">{ArmorClass2}</td>
+            <td className="tablecell tablelines">{ArmorClass3}</td>
+            <td className="tablecell tablelines">{ArmorClass4} </td>
+            <td className="tablecell tablelines">{ArmorClass5}</td>
+            <td className="tablecell">{ArmorClass6}</td>
+          </tr>
+          </tbody>
+        </table>
+            
+            
+                      </div></span><br/>
 
-      </ListGroup>
-    </Card>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
   );
 };
 
