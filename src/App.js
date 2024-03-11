@@ -22,16 +22,19 @@ function App() {
 }, []);
 
   useEffect(() => {
+  var regex = searchInput.replace(" ", '.*');
+  regex = regex + '.*';
   let filtered = [];
   if (searchInput === "") {
   filtered = bullets
   } else {
   filtered = bullets.filter(bullet =>
-  bullet.Name.toLowerCase().includes(searchInput.toLowerCase())
+  bullet.Name.toLowerCase().match(regex.toLowerCase())
   );
   }
   setFilteredBullets(filtered);
   }, [bullets, searchInput]);
+
 
   const handleInput = e => {
     setSearchInput(e.target.value)
@@ -41,11 +44,13 @@ function App() {
 
   return (
     <div className="App">
-        <SearchBar
+    <div className="main-body">
+    <SearchBar
         placeholder='Search Bullets'
         handleInput={handleInput}
         />
         <CardList bullets={filteredBullets} />
+    </div>
     </div>
   );
 }
