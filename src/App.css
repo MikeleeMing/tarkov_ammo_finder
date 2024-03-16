@@ -2,3 +2,9 @@
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .main-body {
+      margin-right: 50%; /* Adjusted margin for mobile */
+      margin-left: auto; /* Adjusted margin for mobile */
+  }
+}

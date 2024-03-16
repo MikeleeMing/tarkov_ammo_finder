@@ -1,9 +1,15 @@
 .search {
     align-self: center;
-    width: 50vh;
+    width: 50%;
     margin-top: 10px;
     line-height: 30px;
     margin-bottom: 30px;
+
     box-shadow: h-offset v-offset blur spread color;
     }
     
+    @media (max-width: 768px) {
+        .search {
+            width: 110%;
+        }
+    }

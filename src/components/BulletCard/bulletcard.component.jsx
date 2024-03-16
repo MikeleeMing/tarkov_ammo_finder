@@ -21,16 +21,13 @@ function BulletCard({ bullet }) {
     <div className="card">
       <img className="img" src={`${process.env.PUBLIC_URL}/${BulletImg}`} alt=''/>
       <div className="card-title">{ Name }</div>
-      <div className="card-body">
         <ul className="list">
-          <li className="item">
-          <li className="item">Damage: { DMG }</li>
-          <li className="item">Penetration: { PenetrationPower }</li>
-          <li className="item">Frag Change: { FragChance }</li>
-          </li>
-          <li className="item">
+          <li className="item center">Damage: { DMG }</li>
+          <li className="item center">Penetration: { PenetrationPower }</li>
+          <li className="item center">Frag Change: { FragChance }</li>
+          <li className="armor">
           <span className="armor-value"> 
-          Effectiveness Against Armor:<br/>
+          <div className="effective">Effectiveness Against Armor:</div><br/>
           <div className="armor-v">
           <table class="custom-table">
           <thead>
@@ -61,7 +58,6 @@ function BulletCard({ bullet }) {
           </li>
         </ul>
 
-      </div>
     </div>
 
   );

@@ -1,5 +1,5 @@
 .bulletlist {
-    width: 66vw;
+    width: fit-content;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;

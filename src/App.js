@@ -45,7 +45,7 @@ function App() {
   return (
     <div className="App">
     <div className="main-body">
-    <SearchBar
+      <SearchBar
         placeholder='Search Bullets'
         handleInput={handleInput}
         />
