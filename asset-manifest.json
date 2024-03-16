@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/tarkov_ammo_finder/static/css/main.0e38111e.css",
-    "main.js": "/tarkov_ammo_finder/static/js/main.efb262cc.js",
+    "main.css": "/tarkov_ammo_finder/static/css/main.4989c5ea.css",
+    "main.js": "/tarkov_ammo_finder/static/js/main.4c31bf2d.js",
     "static/js/453.37ef86b8.chunk.js": "/tarkov_ammo_finder/static/js/453.37ef86b8.chunk.js",
+    "static/media/cardbackground.webp": "/tarkov_ammo_finder/static/media/cardbackground.4b3187d84d01ebd6917f.webp",
     "static/media/killaimg.jpg": "/tarkov_ammo_finder/static/media/killaimg.9e10fc1316912f38bf51.jpg",
     "index.html": "/tarkov_ammo_finder/index.html",
-    "main.0e38111e.css.map": "/tarkov_ammo_finder/static/css/main.0e38111e.css.map",
-    "main.efb262cc.js.map": "/tarkov_ammo_finder/static/js/main.efb262cc.js.map",
+    "main.4989c5ea.css.map": "/tarkov_ammo_finder/static/css/main.4989c5ea.css.map",
+    "main.4c31bf2d.js.map": "/tarkov_ammo_finder/static/js/main.4c31bf2d.js.map",
     "453.37ef86b8.chunk.js.map": "/tarkov_ammo_finder/static/js/453.37ef86b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0e38111e.css",
-    "static/js/main.efb262cc.js"
+    "static/css/main.4989c5ea.css",
+    "static/js/main.4c31bf2d.js"
   ]
 }
