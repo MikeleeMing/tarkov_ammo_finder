@@ -6,8 +6,6 @@
     text-shadow: rgb(65, 64, 64) 0px 0px 10px;
     margin: 3px;
     font-size: 14px;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgba(0, 0, 0, 0.425);
 }
 
 .img {
@@ -32,7 +30,6 @@
     display: inline;
     font-size: large;
     font-weight: 750;
-    -webkit-text-stroke-color: rgba(0, 0, 0, 0.021);
 }
 
 .list {
@@ -52,21 +49,16 @@
     text-align: center;
     font-size: large;
     font-weight: 999;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgba(0, 0, 0, 0.425);
 }
 .card-title {
     margin: 0;
     font-weight: 999;
     font-size: large;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgba(0, 0, 0, 0.425);
 
 }
 
 .custom-table {
     border-top: 1px solid rgb(0, 0, 0);   
-    -webkit-text-stroke-color: rgba(0, 0, 0, 0); 
 }
 
 .tablecell { 
