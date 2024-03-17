@@ -1,5 +1,5 @@
 .card {
-    background-image: url("/cardbackground.webp");
+    background-image: url("/grittybench.webp");
     background-size: cover;
     color: rgb(248, 246, 246);
     height: auto;
@@ -52,7 +52,7 @@
 }
 .card-title {
     margin: 0;
-    font-weight: 999;
+    font-weight: 850;
     font-size: large;
 
 }
@@ -66,3 +66,29 @@
     text-align: center;
 }
 
+.tabledatatext {
+    font-weight: 600;
+    font-size: large;
+}
+
+.bulletsupereffective {
+    background-color: rgb(6, 255, 6);
+
+}
+
+.bulletveryeffective {
+    background-color: rgb(14, 148, 14);
+
+}
+
+.bulleteffective{
+    background-color: rgb(106, 134, 4);
+}
+
+.bulletslightlyeffective{
+    background-color: orange;
+}
+
+.bulletnoteffective {
+    background-color: red;
+}

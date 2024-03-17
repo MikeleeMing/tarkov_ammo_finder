@@ -2,6 +2,23 @@ import React from "react";
 import './bulletcard.styles.css';
 
 
+function assignColor(armorclass) {
+  if(armorclass > 5 ) {
+    return 'bulletsupereffective'
+  }
+  else if (armorclass === 5) {
+    return 'bulletveryeffective'
+  }
+  else if (armorclass === 4) {
+    return 'bulleteffective'
+  }
+  else if (armorclass === 3) {
+    return 'bulletslightlyeffective'
+  }
+  else {
+    return 'bulletnoteffective'
+  }
+}
 
 
 function BulletCard({ bullet }) {
@@ -15,7 +32,20 @@ function BulletCard({ bullet }) {
     const ArmorClass5 = bullet["Armor class 5"];
     const ArmorClass6 = bullet["Armor class 6"];
     const BulletImg = bullet["imgurl"];
-    console.log("bullet damage: ", BulletImg);
+    var cellcolor1 = '';
+    var cellcolor2 = '';
+    var cellcolor3 = '';
+    var cellcolor4 = '';
+    var cellcolor5 = '';
+    var cellcolor6 = '';
+    
+    cellcolor1 = assignColor(ArmorClass1)
+    cellcolor2 = assignColor(ArmorClass2)
+    cellcolor3 = assignColor(ArmorClass3)
+    cellcolor4 = assignColor(ArmorClass4)
+    cellcolor5 = assignColor(ArmorClass5)
+    cellcolor6 = assignColor(ArmorClass6)
+
 
   return (
     <div className="card">
@@ -42,12 +72,12 @@ function BulletCard({ bullet }) {
         </thead>
         <tbody>
           <tr>
-            <td className="tablecell tablelines">{ArmorClass1}</td>
-            <td className="tablecell tablelines">{ArmorClass2}</td>
-            <td className="tablecell tablelines">{ArmorClass3}</td>
-            <td className="tablecell tablelines">{ArmorClass4} </td>
-            <td className="tablecell tablelines">{ArmorClass5}</td>
-            <td className="tablecell">{ArmorClass6}</td>
+            <td className={`tablecell tablelines tabledatatext ${cellcolor1}`}>{ArmorClass1}</td>
+            <td className={`tablecell tablelines tabledatatext ${cellcolor2}`}>{ArmorClass2}</td>
+            <td className={`tablecell tablelines tabledatatext ${cellcolor3}`}>{ArmorClass3}</td>
+            <td className={`tablecell tablelines tabledatatext ${cellcolor4}`}>{ArmorClass4} </td>
+            <td className={`tablecell tablelines tabledatatext ${cellcolor5}`}>{ArmorClass5}</td>
+            <td className={`tablecell tabledatatext ${cellcolor6}`}>{ArmorClass6}</td>
           </tr>
           </tbody>
         </table>
