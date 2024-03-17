@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/tarkov_ammo_finder/static/css/main.0c7d0481.css",
-    "main.js": "/tarkov_ammo_finder/static/js/main.bc1e9eda.js",
+    "main.js": "/tarkov_ammo_finder/static/js/main.b0190890.js",
     "static/js/453.37ef86b8.chunk.js": "/tarkov_ammo_finder/static/js/453.37ef86b8.chunk.js",
     "static/media/killaimg.jpg": "/tarkov_ammo_finder/static/media/killaimg.9e10fc1316912f38bf51.jpg",
     "static/media/grittybench.webp": "/tarkov_ammo_finder/static/media/grittybench.998b9636afd4681bb529.webp",
     "index.html": "/tarkov_ammo_finder/index.html",
     "main.0c7d0481.css.map": "/tarkov_ammo_finder/static/css/main.0c7d0481.css.map",
-    "main.bc1e9eda.js.map": "/tarkov_ammo_finder/static/js/main.bc1e9eda.js.map",
+    "main.b0190890.js.map": "/tarkov_ammo_finder/static/js/main.b0190890.js.map",
     "453.37ef86b8.chunk.js.map": "/tarkov_ammo_finder/static/js/453.37ef86b8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0c7d0481.css",
-    "static/js/main.bc1e9eda.js"
+    "static/js/main.b0190890.js"
   ]
 }
