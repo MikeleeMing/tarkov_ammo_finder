@@ -12,7 +12,7 @@ function App() {
   useEffect(() => {
     const fetchBullets = async () => {
       try {
-        const response = await axios('https://ammo-finder-be.onrender.com/bullets');
+        const response = await axios('/bulletdata.json');
         setBullets(response.data);
       } catch (error) {
         console.error("Error fetching bullets:", error);
