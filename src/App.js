@@ -1,8 +1,8 @@
 import './App.css';
 import { useState, useEffect } from 'react';
-import axios from 'axios';
 import CardList from './components/CardList/cardlist.component';
 import SearchBar from './components/SearchBar/searchbar.component';
+import bulletdata from './bulletdata/bulletdata.json';
 
 function App() {
   const [bullets, setBullets] = useState([]);
@@ -12,8 +12,7 @@ function App() {
   useEffect(() => {
     const fetchBullets = async () => {
       try {
-        const response = await axios('/bulletdata.json');
-        setBullets(response.data);
+        setBullets(bulletdata);
       } catch (error) {
         console.error("Error fetching bullets:", error);
       }
